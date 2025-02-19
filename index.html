@@ -129,14 +129,24 @@
             height: 200px;
             position: relative;
             background: #1a1a1a;
+            overflow: hidden;
         }
 
         .project-preview img,
-        .project-preview iframe {
+        .project-preview iframe,
+        .project-preview video {
             width: 100%;
             height: 100%;
             object-fit: cover;
             border: none;
+        }
+
+        .project-preview video::-webkit-media-controls {
+            background-color: rgba(26, 26, 26, 0.1);
+        }
+
+        .project-preview video::-webkit-media-controls-panel {
+            background-color: rgba(26, 26, 26, 0.7);
         }
 
         .project-content {
@@ -279,6 +289,7 @@
         <img src="Images/Profile.jpg" alt="Profile Picture" class="profile-image">
         <div class="hero-content">
             <h1>Ricky To</h1>
+            <h1>杜歴祺(ト レキキ)</h1>
             <p>Game Programmer | C++ | Unity | Unreal</p>
         </div>
     </section>
@@ -292,8 +303,9 @@
                         <img src="Images/Rava.png" alt="Rava Engine">
                     </div>
                     <div class="project-content">
-                        <h3>Rava Engine(Self made game Engine)</h3>
-                        <p>Making a game engine while learning Vulkan.</p>
+                        <h3>Rava Engine(自作エンジン、制作中)</h3>
+                        <p>Vulkanを勉強しながらエンジンを作ってみる</p>
+                        <p>制作期間：６ヶ月</p>
                         <a href="https://github.com/ricky10099/RavaEngine" target="_blank">
                             <button>View Project</button>
                         </a>
@@ -307,16 +319,42 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen>
                         </iframe>
+                        <!-- <video controls>
+                            <source src="Videos/Little Guardian Demo.mp4" type="video/mp4">
+                        </video> -->
                     </div>
                     <div class="project-content">
                         <h3>Little Guardian</h3>
-                        <p>A 3D action game developed using framework given by school which base on Dxlib.</p>
-                        <a href="https://drive.google.com/drive/u/3/folders/18F0QyDE9EhtcQMZA42dZB-odibdD_-j3" target="_blank">
+                        <p>学校配布したフレームワークで製作したアクションゲーム</p>
+                        <p>制作期間：4ヶ月</p>
+                        <p>こだわり：打撃効果のヒットストップとカメラシェークやイントロとフィニッシュの演出</p>
+                        <a href="https://drive.google.com/drive/folders/18F0QyDE9EhtcQMZA42dZB-odibdD_-j3?usp=drive_link" target="_blank">
                             <button>View Project</button>
                         </a>
                     </div>
                 </div>
-
+                <div class="project-card">
+                    <div class="project-preview">
+                        <iframe 
+                            src="https://youtube.com/embed/52tuZaRvV_4" 
+                            title="Hallow World Demo (In progress)"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                        <!-- <video controls>
+                            <source src="Videos/Hallow World Demo (In progress).mp4" type="video/mp4">
+                        </video> -->
+                    </div>
+                    <div class="project-content">
+                        <h3>Hallow World</h3>
+                        <p>Unityでチーム製作のVRゲームです。</p> 
+                        <p>制作期間：1ヶ月</p>
+                        <p>担当部分：プレイヤー、敵のアクション、敵のAI、プレイヤー（猫の手）のアニメーション</p>
+                        <a href="https://drive.google.com/drive/folders/1KlmRQoCmFT0ti_8PKYp2Zw-work2zzTV?usp=drive_link" target="_blank">
+                            <button>View Project</button>
+                        </a>
+                    </div>
+                </div>
                 <div class="project-card">
                     <div class="project-preview">
                         <iframe 
@@ -325,10 +363,15 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen>
                         </iframe>
+                        <!-- <video controls>
+                            <source src="Videos/CHICKEN Demo (Easy mode).mp4" type="video/mp4">
+                        </video> -->
                     </div>
                     <div class="project-content">
                         <h3>CHICKEN</h3>
-                        <p>Casual mini game for iPad. Also has a <a href="https://youtu.be/oehAmxMD1aY">hard mode</a>.</p> 
+                        <p>Unityで制作した簡単なiPadゲーム. <a href="https://youtu.be/oehAmxMD1aY">ハードモード</a>もあります。</p> 
+                        <p>制作期間：1ヶ月</p>
+                        <p>こだわり：シーン変更せずにカメラワークだけでタイトル、プレイ、エンド表現します。</p>
                         <a href="https://github.com/ricky10099/ChickenSurvivor" target="_blank">
                             <button>View Project</button>
                         </a>
@@ -343,16 +386,15 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen>
                         </iframe>
+                        <!-- <video controls>
+                            <source src="Videos/Turn Base RPG Demo (In progress).mp4" type="video/mp4">
+                        </video> -->
                     </div>
                     <div class="project-content">
-                        <h3>Turn Base RPG (In progress)</h3>
-                        <p>A turn base RPG game making in Unity. The purpose is to learn making a turn base battle system.</p> 
-                        <a href="https://github.com/ricky10099/TurnBaseRPG" target="_blank">
-                            <button>View Project</button>
-                        </a>
+                        <h3>Turn Base RPG (制作中)</h3>
+                        <p>Unityで製作したターンベースRPGです。ターンベースのバトルシステム制作をチャレンジして作ってみました。</p> 
                     </div>
                 </div>
-
                 <div class="project-card">
                     <div class="project-preview">
                         <iframe 
@@ -361,12 +403,13 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen>
                         </iframe>
+                        <!-- <video controls>
+                            <source src="Videos/Unreal Multiplay.mp4" type="video/mp4">
+                        </video> -->
                     </div>
                     <div class="project-content">
-                        <h3>Hallow World (In progress)</h3>
-                        <p>A team project to make a VR game in Unity.</p> 
-                        <br/>
-                        <p>Unfortunately I'm not the admin of this repositories and it's private.</p>
+                        <h3>Online Multiplay (制作中)</h3>
+                        <p>Unreal Engineでオンラインマルチプレイゲーム制作をチャレンジしています。</p> 
                     </div>
                 </div>
             </div>
@@ -378,32 +421,32 @@
             <h2>Technical Skills</h2>
             <div class="skills">
                 <div class="skill-card">
-                    <h3>Game Engines</h3>
+                    <h3>ゲームエンジン</h3>
                     <ul>
-                        <li>Rava Engine (I'm working on it!)</li>
                         <li>Unreal Engine</li>
                         <li>Unity</li>
                         <li>Godot</li>
                     </ul>
                 </div>
                 <div class="skill-card">
-                    <h3>Programming</h3>
+                    <h3>経験言語</h3>
                     <ul>
-                        <li>C++</li>
-                        <li>C#</li>
-                        <li>Python</li>
-                        <li>JavaScript</li>
-                        <li>Java</li>
-                        <li>Html & CSS (not excatly a programming though🤪)</li>
+                        <li>C++（約3年）</li>
+                        <li>C#（約3年）</li>
+                        <li>Java（約2年）</li>
+                        <li>php（約1ヶ月）</li>
+                        <li>JavaScript（約1ヶ月）</li>
+                        <li>Python（約1ヶ月）</li>
+                        <li>Html & CSS (約1ヶ月)</li>
                     </ul>
                 </div>
                 <div class="skill-card">
-                    <h3>Interested in</h3>
+                    <h3>趣味</h3>
                     <ul>
-                        <li>Video Game (a must for a game programmer!)</li>
-                        <li>Camping (chill with friends!)</li>
-                        <li>Cooking (chill alone!)</li>
-                        <li>Hiking (I need some fresh air!)</li>
+                        <li>ゲーム（言うまでもないと思います!）</li>
+                        <li>キャンプ（大自然でリフレッシュ！）</li>
+                        <li>料理（他の人と美味しいものをシェアする！）</li>
+                        <li>写真（綺麗な景色を掴む！）</li>
                     </ul>
                 </div>
             </div>
