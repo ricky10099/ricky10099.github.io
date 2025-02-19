@@ -100,6 +100,31 @@
             margin: 0 auto;
         }
 
+        .profile-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+
+        .profile-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .profile-image.secondary {
+            opacity: 0;
+        }
+
+        .profile-container:hover .profile-image.primary {
+            opacity: 0;
+        }
+
+        .profile-container:hover .profile-image.secondary {
+            opacity: 1;
+        }
+
         h2 {
             color: var(--secondary-color);
             margin-bottom: 2rem;
@@ -286,7 +311,10 @@
     </header>
 
     <section id="home" class="hero">
-        <img src="Images/Profile.jpg" alt="Profile Picture" class="profile-image">
+        <div class="profile-container">
+            <img src="Images/Profile.jpg" alt="Profile Picture" class="profile-image primary">
+            <img src="Images/Profile2.jpg" alt="Alternative Profile Picture" class="profile-image secondary">
+        </div>
         <div class="hero-content">
             <h1>Ricky To</h1>
             <h1>杜歴祺(ト レキキ)</h1>
